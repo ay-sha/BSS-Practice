@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Extra</title>
+    <style>
+        meter::-webkit-meter-optimum-value{
+            background-color: blueviolet;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Global Attribute</h2>
+    <!-- accesskey & title-->
+    <button accesskey="h" title="Submit Button" onclick="alert('Clicked')">Submit</button>
+
+    <!-- hidden -->
+    <p hidden>This is Hidden</p>
+
+    <!-- tabindex -->
+    <button tabindex="3">Button 1</button>
+    <button tabindex="1">Button 2</button>
+    <button tabindex="2">Button 3</button>
+
+    <!-- contenteditable -->
+    <p contenteditable="true">This is a paragraph but Editable</p>
+
+    <!-- draggable -->
+    <p>Not Draggable</p>
+    <p draggable="true">Draggable</p>
+
+    <!-- autofocus -->
+    <input type="text" autofocus>
+
+    <!-- Popover -->
+    <h2>PopOver</h2>
+    <button popovertarget="pop-1">Popover</button>
+    <div popover id="pop-1">
+        <h3>This is a Popover</h3>
+        <p>This is a Popover</p>
+    </div>
+
+    <!-- Details -->
+    <h2>Details</h2>
+    <details>
+        <summary>Details</summary>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores molestias vitae provident consectetur eligendi
+        ipsam nobis a saepe. Non, nulla.
+    </details>
+    <br>
+    <!-- progress -->
+    <label for="file">File Progress</label>
+    <progress id="file" max="100" value="30">10%</progress>
+
+    <br>
+    <!-- Meter -->
+    <label for="fuel">Fuel: </label>
+    <meter id="fuel" value="20" min="0" max="100" low="30" high="90" optimal="80">20/100</meter>
+</body>
+</html>
