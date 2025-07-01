@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <form>
+        <div>
+            <label for="fname">Name</label> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="text" placeholder="Enter name" id="fname" value="Aysha" name="name" required minlength="3" maxlength="10">
+        </div>
+        <br>
+        <div>
+            <label for="email">Email</label> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="email" id="email" placeholder="Enter email" name="email" required>
+        </div>
+        <br>
+        <div>
+            <label for="pass">Password</label> &nbsp;
+            <input type="password" id="pass" placeholder="Enter Password" name="pass" required minlength="8">
+        </div>
+        <br>
+        <div>
+            <label for="add">Address</label> &nbsp; &nbsp;
+            <textarea name="add" id="add" placeholder="Enter Address" rows="4" cols="40"></textarea>
+        </div>
+        <br>
+        <div>
+            <span>Skills:</span> &nbsp; &nbsp; &nbsp; 
+            <label for="html">
+                <input type="checkbox" name="lang" id="html"  checked disabled>HTML5
+            </label>
+            <label for="css">
+                <input type="checkbox" name="lang" id="css">CSS3
+            </label>
+            <label for="js">
+                <input type="checkbox" name="lang" id="js">JavaScript
+            </label>
+            <label for="bootstrap">
+                <input type="checkbox" name="lang" id="bootstrap">Bootstrap
+            </label>
+            <label for="tailwind">
+                <input type="checkbox" name="lang" id="tailwind">TailwindCSS
+            </label>
+        </div>
+        <br>
+        <div>
+            <label for="skill">Framework</label>&nbsp;&nbsp;&nbsp;
+            <select name="skill" id="skill" multiple size="2">
+                <option value="react">React.js</option>
+                <option value="angular">Angular</option>
+                <option value="vue">Vue.js</option>
+                <option value="svelte">svelte</option>
+            </select>
+        </div>
+        <br>
+
+        <div>
+            <span>Gender </span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <label for="male">
+                <input type="radio" name="gender" id="male"> Male
+            </label>
+            <label for="fmale">
+                <input type="radio" name="gender" id="male"> Female
+            </label>
+        </div>
+        <br>
+        <div>
+            <label for="date">Date</label> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="date" name="date" id="date">
+        </div>
+        <br>
+        <div>
+            <label for="time">Time</label> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="time" name="time" id="time">
+        </div>
+        <br>
+        <div>
+            <label for="week">Week</label> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="week" name="week" id="week">
+        </div>
+        <br>
+        <div>
+            <label for="month">Month</label> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="month" name="month" id="month">
+        </div>
+        <br>
+        <div>
+            <label for="range">Rate Your Experience</label> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="range" name="range" id="range" min="0" max="10" step="2">
+        </div>
+        <br>
+        <div>
+            <label for="url">URL</label> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="url" name="url" id="url">
+        </div>
+        <br>
+        <div>
+            <label for="color">Color</label> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="color" name="color" id="color">
+        </div>
+        <br>
+
+        
+        <!-- <input type="button" value="Submit"> -->
+        <br> <br> <br> 
+        <button type="submit" >Submit</button>
+    </form>
+</body>
+</html>
