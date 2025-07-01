@@ -1,15 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Forms</title>
 </head>
+
 <body>
+    <h2><a href="FormChallenge.html">Go to the Form Challenge</a></h2>
     <form>
         <div>
             <label for="fname">Name</label> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <input type="text" placeholder="Enter name" id="fname" value="Aysha" name="name" required minlength="3" maxlength="10">
+            <input type="text" placeholder="Enter name" id="fname" value="Aysha" name="name" required minlength="3"
+                maxlength="10">
         </div>
         <br>
         <div>
@@ -28,9 +32,9 @@
         </div>
         <br>
         <div>
-            <span>Skills:</span> &nbsp; &nbsp; &nbsp; 
+            <span>Skills:</span> &nbsp; &nbsp; &nbsp;
             <label for="html">
-                <input type="checkbox" name="lang" id="html"  checked disabled>HTML5
+                <input type="checkbox" name="lang" id="html" checked disabled>HTML5
             </label>
             <label for="css">
                 <input type="checkbox" name="lang" id="css">CSS3
@@ -56,7 +60,17 @@
             </select>
         </div>
         <br>
-
+        <div>
+            <label for="favLang">Language</label> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input list="languages" id="favLang" name="favLang">
+            <datalist id="languages">
+                <option value="c/c++"></option>
+                <option value="java"></option>
+                <option value="python"></option>
+                <option value="javascript"></option>
+            </datalist>
+        </div>
+        <br>
         <div>
             <span>Gender </span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <label for="male">
@@ -78,6 +92,17 @@
         </div>
         <br>
         <div>
+            <label for="schedule">Schedule</label> &nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="time" list="schedule">
+            <datalist id="schedule">
+                <option value="12:00"></option>
+                <option value="14:00"></option>
+                <option value="16:00"></option>
+            </datalist>
+        </div>
+
+        <br>
+        <div>
             <label for="week">Week</label> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <input type="week" name="week" id="week">
         </div>
@@ -93,6 +118,18 @@
         </div>
         <br>
         <div>
+            <label for="tick">Tip Amount</label>
+            <input type="range" id="tick" list="tips" min="0" max="100">
+            <datalist id="tips">
+                <option value="10"></option>
+                <option value="20"></option>
+                <option value="30"></option>
+                <option value="40"></option>
+                <option value="50"></option>
+            </datalist>
+        </div>
+        <br>
+        <div>
             <label for="url">URL</label> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <input type="url" name="url" id="url">
         </div>
@@ -102,11 +139,20 @@
             <input type="color" name="color" id="color">
         </div>
         <br>
-
-        
+        <div>
+            <label for="color">Pick a Color</label>&nbsp;&nbsp;
+            <input type="color" name="color" id="color" list="colors">
+            <datalist id="colors">
+                <option value="#8B0000"></option>
+                <option value="#800000"></option>
+                <option value="#000000"></option>
+                <option value="#A52A2A"></option>
+            </datalist>
+        </div>
         <!-- <input type="button" value="Submit"> -->
-        <br> <br> <br> 
-        <button type="submit" >Submit</button>
+        <br> <br> <br>
+        <button type="submit">Submit</button>
     </form>
 </body>
+
 </html>
