@@ -123,3 +123,13 @@ li{
     margin-right: 10px;
 }
 
+
+@media(max-width: 768px ){
+    .pricing{
+        flex-direction: column;
+    }
+    .container{
+        margin: 2rem ;
+        padding: 40px 30px;
+    }
+}
