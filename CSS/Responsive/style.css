@@ -103,8 +103,8 @@ main{
     margin-bottom: 0.5rem;
 }
 .card-2{
-    width: 70cqw;
-    height: 50cqh;
+    width: 50cqw;
+    height: 30cqh;
 }
 @container (max-width: 600px ){
     .card{
