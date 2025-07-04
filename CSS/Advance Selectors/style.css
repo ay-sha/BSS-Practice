@@ -1,0 +1,326 @@
+/* *, 
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} */
+/* body{
+    font-family: sans-serif;
+    line-height: 1.6;
+} */
+
+
+.header .menu ul{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    background-color: cadetblue;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    font-size: 1.3rem;
+}
+.menu ul li a{
+    text-decoration: none;
+    color: white;
+    background-color: cadetblue !important;
+    padding: 5px 10px;
+    border: 2px solid darkcyan;
+}
+.container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    margin: 80px auto;
+    
+}
+.container form{
+    background-color: aliceblue;
+    border:1px solid darkcyan;
+    width: 700px;
+    height: 80vh;
+}
+.form-grp{
+    padding:10px 40px;
+}
+.form-grp label{
+    display: block;
+}
+.form-grp input,
+.form-grp textarea{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid gray;
+}
+.form-grp textarea{
+    height: 150px;
+}
+.btn{
+    width: 50%;
+    padding: 10px;
+    background-color: white;
+    border: 1px solid darkcyan;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+.btn:hover{
+    background-color: cadetblue;
+    border: 1px solid white;
+    color: white;
+}
+
+/* select by type attribute */
+input[type='email']{
+    border: 2px solid blue;
+}
+/* select by name attribute */
+input[name='name']{
+    border: 2px dashed black;
+}
+/* select text type and id of name  */
+input[type='text'][id='name']{
+    background-color: lightblue;
+}
+/* required */
+textarea[required]{
+    border-color: red;
+}
+/* select pass with a maxlength of 8 */
+input[type='password'][maxlength='8']{
+    background-color: lightcoral;
+}
+/* select button with type of submit */
+button[type='submit']{
+    background-color: lightsalmon;
+}
+/* link with # */
+/* a[href^='#']{
+    color: black;
+} */
+/* link ends with .com */
+a[href$='.com']{
+    color: purple;
+}
+/* link contains geeksforgeek */
+a[href*='geeksforgeek']{
+    color: brown;
+}
+
+/* Child Sibling */
+
+/* paragraph that are direct child of container */
+.main-container > p{
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+/* only ul list that are direct child of container  */
+.main-container  > ul{
+    list-style: none;
+}
+
+/* only links that are direct child of container  */
+.main-container > a{
+    color: green;
+}
+
+/* the immidiate sibling link after h1 */
+.main-container h1 + a{
+    color: red;
+    font-weight: bold;
+}
+/* all links that are siblings that come after h1 */
+.main-container h1 ~a{
+    color: purple;
+    font-weight: bold;
+}
+.main-container>ul +div{
+    background-color: lightblue;
+}
+
+/* pseudo element */
+/* P::first-letter{
+    font-size: 1.5rem;
+    color: red;
+}
+p::first-line{
+    color: purple;
+}
+p::selection{
+    color: red;
+    background-color: yellow;
+} */
+input:required{
+    background-color: lightblue;
+    width: 50%;
+}
+input::placeholder{
+    color: purple;
+    font-size: 1rem;
+}
+input::file-selector-button{
+    color: purple;
+    font-size: 1rem;
+    padding: 5px 10px;
+    background-color: aliceblue;
+    margin-top: 20px;
+    border: 1px solid purple;
+}
+/* li::marker{
+    content:'👉 ' ;
+} */
+
+/* Pseudo Class n child */
+/* style the first li  */
+ul li:first-child{
+    background-color: lightblue;
+}
+
+/* style the last li */
+ul li:last-child{
+    background-color: lightcoral;
+}
+
+/* style every odd li */
+ul li:nth-child(odd){
+    background-color: lightgrey;
+}
+/* style every even li */
+ul li:nth-child(even){
+    background-color: lightgoldenrodyellow;
+}
+
+/* style every nth item */
+ul li:nth-child(4){
+    background-color: lightcoral;
+}
+
+/* style every 4th item */
+ul li:nth-child(4n){
+    background-color: orange;
+}
+
+/* style only the child */
+ul li:only-child{
+    background-color: blanchedalmond;
+    color: brown;
+}
+
+/* pseudo class-nth of child */
+
+/* style first of type child  */
+ul li:first-of-type{
+    font-weight: bold;
+}
+/* style last of type child  */
+ul li:last-of-type{
+    font-weight: bold;
+}
+
+/* style the 3rd item */
+ul li:nth-of-type(3){
+    font-weight: bold;
+    color: green;
+}
+/* style the 6th item */
+ul li:nth-of-type(6){
+    font-weight: bold;
+    color: blue;
+}
+/* style the odd item */
+ul li:nth-of-type(odd){
+    font-weight: bold;
+    color: purple;
+}
+
+/* style the even item */
+ul li:nth-of-type(even){
+    font-weight: bold;
+    color: red;
+}
+
+/* nth-of-type vs nth child */
+/* p:nth-of-type(2){
+    font-weight: bold;
+} */
+/* p:nth-child(2){
+    color: red;
+} */
+
+/* pseudo class with pseudo element */
+.container2 p:first-of-type::first-letter{
+    font-weight: bold;
+    font-size: 2rem;
+    color: red;
+}
+
+/* pseudo before and after */
+.container3{
+    padding: 20px;
+    margin: 20px auto;
+    border: 1px solid black;
+}
+.container3-form label{
+    display: flex;
+    align-items: center;
+}
+.container3-form input{
+    width: 50%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    position: relative;
+}
+h2::before{
+    content: 'Hello';
+    color: purple;
+    margin-right: 5px;
+}
+.container3-form label.is-required::after{
+    content: '*';
+    color: red;
+    margin-left: 5px;
+    font-size: 1.2rem;
+}
+
+h2::after{
+    content: ' ';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 200px;
+    height: 200px;
+    background-color: lightblue;
+}
+
+
+/* is() where() has() */
+.container4{
+    max-width: 600px;
+    margin: 30px auto;
+}
+/* .container4 h1,
+.container4 h3,
+.container4 p{
+    color: red;
+} */
+/* .container4 :is(h1, h3){
+    color: red;
+}
+
+a:is(:hover , :focus){
+    background-color: pink;
+}
+.container4 :where{
+    color: green;
+} */
+
+.container4:has(h1 span){
+    color: red;
+}
+
+h1:has(+h3){
+    color: blue;
+}

@@ -82,3 +82,33 @@ img {
 .section#home {
     margin-bottom: 100px;
 }
+
+/* Pseudo class and pseudo element */
+.section p:first-of-type{
+    background-color: lightgoldenrodyellow;
+}
+
+.section li:nth-child(odd){
+    background-color: #eee;
+}
+.section li:nth-child(even){
+    background-color: #ddd;
+}
+.section:has(img){
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+ul+p{
+    background-color: #333;
+    color: white;
+    padding: 20px;
+}
+a[href^='http://'],
+a[href^='https://']{
+    color: red;
+}
+
+.section:nth-of-type(2) p:first-of-type a:first-of-type,
+.section:nth-of-type(2) p:nth-of-type(2){
+    font-weight: bold;
+}
