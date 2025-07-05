@@ -1,0 +1,209 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    overflow-x: hidden;
+}
+img{
+    max-width: 100%;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: #333;
+}
+
+.main-container{
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+.navbar{
+    background-color: lightblue;
+    padding: 1rem 2rem;
+    height: 80px;
+}
+.navbar .nav-logo{
+    width: 50px;
+}
+.navbar-flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar .menu-list{
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+.navbar a:hover{
+    color: brown;
+}
+/* Mobile Menu */
+.navbar .mobile-menu-items{
+    position: absolute;
+    top: 80px;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(154, 192, 204, 0.5);
+    text-align: center;
+    transition: transform 0.3s ease; 
+    transform: translateX(100%);
+}
+.navbar .mobile-menu-list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    height: 100%;
+    padding-top: 300px;
+    font-size: 1.2rem;
+}
+.navbar .mobile-menu-toggle{
+    cursor: pointer;
+}
+.navbar .mobile-menu-items.active{
+    transform: translateX(0);
+}
+.navbar .mobile-menu{
+    display: none;
+}
+
+
+@media(max-width: 768px){
+    .navbar .menu{
+        display: none;
+    }
+    .navbar .mobile-menu{
+        display: block;
+    }
+}
+
+
+
+
+
+
+
+/* Transition and Animation */
+.container{
+    max-width: 400px;
+    height: 400px;
+    margin: 30px auto;
+    background-color: lightgoldenrodyellow;
+    position: relative;
+}
+.btn{
+    padding: 10px 20px;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    width: 200px;
+    /* transition: background-color 0.8s ease-in-out, color 0.8s; */
+    transition: all 0.8s ease-in-out, color 0.8s;
+}
+
+.btn:hover{
+    background-color: lightcoral;
+    color: brown;
+    border: 1px solid brown;
+    width: 400px;
+}
+.logo{
+    height: 100px;
+    /* margin: 100px auto; */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    /* for center with absolute and relative position */
+    transform: translate(-50%, -50%);
+    transition: all 0.5s ease-in-out;
+}
+.logo:hover{
+    transform: rotate(90deg);
+    transform: translateX(300px);
+    transform: translateY(300px);
+    transform: translate(100px, 100px);
+    transform: skew(30deg);
+    transform: scale(3);
+    transform: rotate(90deg) scale(2);
+}
+
+/* 3D Transforms */
+.container2{
+    max-width: 600px;
+    margin: 200px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f4f4f4;
+}
+.card-container{
+    margin: 50px auto;
+    text-align: center;
+    perspective: 1000px;
+}
+.card{
+    width: 200px;
+    height: 300px;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: all 0.5s ease;
+}
+.card:hover{
+    transform: rotateY(180deg);
+}
+.front{
+    background-color: #3498db;
+    color: white;
+    line-height: 300px
+}
+.back{
+    background-color: #2ecc79;
+    color: white;
+    line-height: 300px;
+    transform: rotateY(180deg);
+}
+.front , .back{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+/* toggle button */
+.container3{
+    max-width: 300px;
+    height: 300px;
+    margin: 30px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f4f4f4;
+}
+.btn2{
+    padding: 10px 20px;
+    background-color: lightcoral;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    width: 200px;
+    transition: all 0.8s ease-in-out, color 0.8s;
+}
+.btn2:hover{
+    background-color: lightsalmon;
+    color: brown;
+    border: 1px solid brown;
+}
+.dark{
+    background-color: black;
+}
