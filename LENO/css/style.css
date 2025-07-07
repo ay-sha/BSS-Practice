@@ -738,11 +738,33 @@ img {
         max-width: 400px;
         margin: 0 auto;
     }
-    .details__icons{
+    .details__icons {
         flex-direction: column;
+        /* flex-wrap: wrap; */
         gap: 2rem;
         margin-top: 4rem;
     }
+
+    .details__icons-title {
+        font-size: 1.5rem;
+    }
+
+    .details__icons-amount {
+        font-size: 2.5rem;
+    }
+
+    .details__icons i {
+        font-size: 3rem;
+    }
+
+    .details__grid-content:nth-of-type(2) {
+        order: 4;
+    }
+
+    .details__grid-image:nth-of-type(2) {
+        order: 3;
+    }
+
     /* download */
     .download{
         padding: 10rem;
@@ -800,12 +822,20 @@ img {
     .modal__content iframe{
         width: 100%;
     }
+    /* downloads */
+    .download {
+        padding: 2rem;
+    }
     /* pricing */
     .pricing__cards{
         flex-direction: column;
     }
     .pricing__card{
         margin-bottom: 4.5rem;
+    }
+     /* footer */
+    .footer i{
+        font-size: 2rem;
     }
     /* details features */
     .details-features__list-item{
