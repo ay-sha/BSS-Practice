@@ -494,7 +494,7 @@ img {
 }
 /* download */
 .download{
-    background: black url('/images/download-background.jpg') center center/cover no-repeat;
+    background: black url('../images/download-background.jpg') center center/cover no-repeat;
     padding: 11.5rem 2rem 8rem;
 }
 .download__container{
@@ -561,10 +561,11 @@ img {
     gap: 1.5rem;
     justify-content: center;
 }
+
 /* details page */
 /* header */
 .inner-header{
-    background: black url('/images/header-background.jpg') center center/cover no-repeat;
+    background: black url('../images/header-background.jpg') center center/cover no-repeat;
     padding: 10rem 2rem 6rem;
 }
 
