@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* html{
+    font-size: 10px;
+} */
+
+body {
+    font-family: "Arial", sans-serif;
+}
+
+img {
+    max-width: 100%;
+}
+main{
+    container-type: inline-size ;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px;
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+
+.container {
+    width: 1100px;
+    max-width: 900px;
+    width: 90%;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid black;
+}
+p{
+    font-size: 1rem;
+    font-size: 2em;
+} 
+
+/* viewport */
+.viewPort{
+    width: 50vw;
+    height: 50vh;
+    background-color: aquamarine;
+    padding: 20px;
+} 
+.viewPort h1{
+    font-size: 2vw ;
+} 
+
+/* responsive */
+@media screen and (max-width: 1200px){
+    .widescreen{
+        background-color: aqua;
+    }
+}
+
+@media(max-width: 992px){
+    .normal{
+        background-color: coral;
+    }
+}
+@media(max-width: 768px){
+    .tablet{
+        background-color: aquamarine;
+    }
+}
+@media(max-width: 576px){
+    .smartphone{
+        background-color: lightcoral;
+    }
+}
+@media(orientation: landscape){
+    .landscape{
+        background-color: yellowgreen;
+    }
+}
+@media(max-height: 800px){
+    .height{
+        background-color: burlywood;
+    }
+}
+@media(min-width: 768px) and (max-width: 991px){
+    body{
+        background: lightpink;
+    }
+}

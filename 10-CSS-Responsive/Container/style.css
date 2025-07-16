@@ -1,0 +1,65 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* html{
+    font-size: 10px;
+} */
+
+body {
+    font-family: "Arial", sans-serif;
+}
+
+/* container */
+main{
+    container-type: inline-size ;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px;
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+
+.card{
+    background: white;
+    padding: 2rem;
+    margin: 1rem;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+
+    /* container-units */
+    width: 50cqw;
+}
+.card h2{
+    margin-bottom: 0.5rem;
+}
+.card-2{
+    width: 50cqw;
+    height: 30cqh;
+}
+@container (max-width: 600px ){
+    .card{
+        width: 95cqw ;
+    }
+}
+
+
+main{
+    container-type: inline-size;
+    font-size: 18px;
+    width: 100%;
+    margin: 30px auto ;
+    padding: 20px;
+}
+main p{
+    padding: 1.2rem;
+    background-color: lightgreen;
+}
+
+/* container */ 
+@container (max-width: 992px){
+    main p{
+        background-color: lightblue;
+    }
+} 
+
