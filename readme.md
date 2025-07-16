@@ -8,12 +8,23 @@ Welcome to my front-end development repository — a collection of structured pr
 
 ```bash
 .
-├── HTML/                    # HTML practice tasks 
-├── CSS/                     # CSS practice tasks 
-├── mini-project/            # Bono Mini Project - Landing Page
-├── LUMINA/                  # Project 1: Creative agency website
-├── Tutor/                   # Project 2: Video Course Website
-└── LENO/                    # Project 3: Productivity app promo website
+├── 01-Essential-HTML/           # Basic HTML essentials
+├── 02-HTML-Element/             # Core HTML elements
+├── 03-Basic-CSS/                # Introduction to CSS
+├── 04-BoxModel-CSS/             # Box model concepts
+├── 05-Flex Box/                 # Flexbox layout
+├── 06-Advance Selectors/        # Advanced CSS selectors
+├── 07-Grid/                     # CSS Grid layout
+├── 08-Transition-Animation/     # Transitions and animations
+├── 09-CSS-Extra/                # Custom Properties, Nesting, etc CSS topics
+├── 10-CSS-Responsive/           # Responsive design with CSS
+├── Bono Mini Project/           # Mini project using HTML & CSS
+├── Challenges/                  # Practice challenges and tasks
+├── LENO/                        # Project 3: Leno 
+├── LUMINA/                      # Project 1: Lumina
+├── Tutor/                       # Project 2: Tutor
+└── readme.md                    # Project overview and documentation
+
 
 ```
 ## Project Showcases
