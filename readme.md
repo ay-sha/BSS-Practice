@@ -21,7 +21,7 @@ Welcome to my front-end development repository — a collection of structured pr
 ├── Bono Mini Project/           # Mini project using HTML & CSS
 ├── Challenges/                  # Practice challenges and tasks
 ├── LENO/                        # Project 3: Leno 
-├── LUMINA/                      # Project 1: Lumina
+├── LUMINA/                      # Project 1: Lumina Creative
 ├── Tutor/                       # Project 2: Tutor
 └── readme.md                    # Project overview and documentation
 
